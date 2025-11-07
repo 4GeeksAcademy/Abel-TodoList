@@ -28,8 +28,8 @@ export const Tasks = () => {
 
         const task = (
             (<li key={key} className="list-group-item">
-                {taskContent}
-                <span ><i onClick={deleteTask} data-key={key} className="fa-solid fa-xmark"></i></span>
+                <span>{taskContent}</span>
+                <span  id='closeButton'><i onClick={deleteTask} data-key={key} className="fa-solid fa-xmark"></i></span>
             </li>)
         )
         setTasks(prev => ({
